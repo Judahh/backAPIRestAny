@@ -22,7 +22,7 @@ if [ "$framework" = "next" ]; then
             (cd $pwd ; backNext -b)
             ;;
 
-        *)
+        "")
             (cd $pwd ; backNext)
             ;;
     esac
@@ -37,7 +37,7 @@ else
             (cd $pwd ; backExpress -b)
             ;;
 
-        *)
+        "")
             (cd $pwd ; backExpress)
             ;;
     esac
