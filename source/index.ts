@@ -1,31 +1,74 @@
-import * as next from '@backapirest/next';
+import {
+  BaseController as BaseControllerNext,
+  BaseControllerDefault as BaseControllerDefaultNext,
+  BaseControllerDelete as BaseControllerDeleteNext,
+  BaseControllerRead as BaseControllerReadNext,
+  BaseControllerCreate as BaseControllerCreateNext,
+  BaseControllerUpdate as BaseControllerUpdateNext,
+  BaseControllerConnect as BaseControllerConnectNext,
+  BaseControllerHead as BaseControllerHeadNext,
+  BaseControllerTrace as BaseControllerTraceNext,
+  RouterSingleton as RouterSingletonNext,
+  Mixin,
+  RouterCreator,
+  request as requestNext,
+  baseRouter,
+  controller,
+  createRoutes,
+  requestAllow,
+  stepIndex,
+  timer,
+} from '@backapirest/next';
 
-import * as express from '@backapirest/express';
+import {
+  SimpleApp,
+  BaseController as BaseControllerExpress,
+  BaseControllerDefault as BaseControllerDefaultExpress,
+  BaseControllerDelete as BaseControllerDeleteExpress,
+  BaseControllerRead as BaseControllerReadExpress,
+  BaseControllerCreate as BaseControllerCreateExpress,
+  BaseControllerUpdate as BaseControllerUpdateExpress,
+  BaseControllerConnect as BaseControllerConnectExpress,
+  BaseControllerHead as BaseControllerHeadExpress,
+  BaseControllerTrace as BaseControllerTraceExpress,
+  RouterSingleton as RouterSingletonExpress,
+  request as requestExpress,
+} from '@backapirest/express';
 
 import dotEnv from 'dotenv';
 dotEnv.config();
 
-const anyT = process.env.BACK_API_REST_FRAMEWORK === 'express' ? express : next;
-const request = anyT.request;
-const SimpleApp = (anyT as any).SimpleApp as express.SimpleApp;
-const BaseController = anyT.BaseController;
-const BaseControllerDefault = anyT.BaseControllerDefault;
-const BaseControllerDelete = anyT.BaseControllerDelete;
-const BaseControllerRead = anyT.BaseControllerRead;
-const BaseControllerCreate = anyT.BaseControllerCreate;
-const BaseControllerUpdate = anyT.BaseControllerUpdate;
-const BaseControllerConnect = anyT.BaseControllerConnect;
-const BaseControllerHead = anyT.BaseControllerHead;
-const BaseControllerTrace = anyT.BaseControllerTrace;
-const RouterSingleton = anyT.RouterSingleton;
-const RouterCreator = (anyT as any).RouterCreator as next.RouterCreator;
-const Mixin = anyT.Mixin;
-const baseRouter = (anyT as any).baseRouter as typeof next.baseRouter;
-const controller = (anyT as any).controller as typeof next.controller;
-const createRoutes = (anyT as any).createRoutes as typeof next.createRoutes;
-const requestAllow = (anyT as any).requestAllow as typeof next.requestAllow;
-const stepIndex = (anyT as any).stepIndex as typeof next.stepIndex;
-const timer = (anyT as any).timer as typeof next.timer;
+const isExpress = process.env.BACK_API_REST_FRAMEWORK === 'express';
+
+const request = isExpress ? requestExpress : requestNext;
+const BaseController = isExpress ? BaseControllerExpress : BaseControllerNext;
+const BaseControllerDefault = isExpress
+  ? BaseControllerDefaultExpress
+  : BaseControllerDefaultNext;
+const BaseControllerDelete = isExpress
+  ? BaseControllerDeleteExpress
+  : BaseControllerDeleteNext;
+const BaseControllerRead = isExpress
+  ? BaseControllerReadExpress
+  : BaseControllerReadNext;
+const BaseControllerCreate = isExpress
+  ? BaseControllerCreateExpress
+  : BaseControllerCreateNext;
+const BaseControllerUpdate = isExpress
+  ? BaseControllerUpdateExpress
+  : BaseControllerUpdateNext;
+const BaseControllerConnect = isExpress
+  ? BaseControllerConnectExpress
+  : BaseControllerConnectNext;
+const BaseControllerHead = isExpress
+  ? BaseControllerHeadExpress
+  : BaseControllerHeadNext;
+const BaseControllerTrace = isExpress
+  ? BaseControllerTraceExpress
+  : BaseControllerTraceNext;
+const RouterSingleton = isExpress
+  ? RouterSingletonExpress
+  : RouterSingletonNext;
 
 export {
   SimpleApp,

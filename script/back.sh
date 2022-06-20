@@ -9,6 +9,8 @@ do
     esac
 done
 
+port="${PORT:-port}"
+echo "Port: ${port}"
 pwd=$(pwd)
 
 if [ "$framework" = "express" ]; then
