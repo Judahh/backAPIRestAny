@@ -12,6 +12,11 @@ done
 port="${PORT:-port}"
 echo "Port: ${port}"
 pwd=$(pwd)
+cd $pwd
+if [ ! -f .env ]
+then
+  export $(cat .env | xargs)
+fi
 
 if [ "$framework" = "express" ]; then
     echo "Using EXPRESS"
