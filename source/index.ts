@@ -24,6 +24,11 @@ if (isExpress) {
   framework = require('@backapirest/express');
 }
 
+const request: typeof Next.request | typeof Express.request = framework.request;
+
+const RouterSingleton: Next.RouterSingleton | Express.RouterSingleton =
+  framework.BaseController;
+
 const BaseController: Next.BaseController | Express.BaseController =
   framework.BaseController;
 const BaseControllerDefault:
@@ -50,6 +55,7 @@ const BaseControllerTrace:
   | Express.BaseControllerTrace = framework.BaseControllerTrace;
 
 export {
+  RouterSingleton,
   BaseController,
   BaseControllerDefault,
   BaseControllerDelete,
@@ -62,6 +68,7 @@ export {
   SimpleApp,
   Mixin,
   RouterCreator,
+  request,
   requestAllow,
   stepIndex,
   timer,
