@@ -25,34 +25,62 @@ if (isExpress) {
 }
 
 const request: typeof Next.request | typeof Express.request = framework.request;
+const getExports = (toExport) => ({
+  enumerable: true,
+  get: () => {
+    return toExport;
+  },
+});
 
-const RouterSingleton: Next.RouterSingleton | Express.RouterSingleton =
-  framework.BaseController;
+const RouterSingleton: {
+  enumerable: boolean;
+  get: () => Next.RouterSingleton | Express.RouterSingleton;
+} = getExports(framework.RouterSingleton);
 
-const BaseController: Next.BaseController | Express.BaseController =
-  framework.BaseController;
-const BaseControllerDefault:
-  | Next.BaseControllerDefault
-  | Express.BaseControllerDefault = framework.BaseControllerDefault;
-const BaseControllerCreate:
-  | Next.BaseControllerCreate
-  | Express.BaseControllerCreate = framework.BaseControllerCreate;
-const BaseControllerRead: Next.BaseControllerRead | Express.BaseControllerRead =
-  framework.BaseControllerRead;
-const BaseControllerUpdate:
-  | Next.BaseControllerUpdate
-  | Express.BaseControllerUpdate = framework.BaseControllerUpdate;
-const BaseControllerDelete:
-  | Next.BaseControllerDelete
-  | Express.BaseControllerDelete = framework.BaseControllerDelete;
-const BaseControllerConnect:
-  | Next.BaseControllerConnect
-  | Express.BaseControllerConnect = framework.BaseControllerConnect;
-const BaseControllerHead: Next.BaseControllerHead | Express.BaseControllerHead =
-  framework.BaseControllerHead;
-const BaseControllerTrace:
-  | Next.BaseControllerTrace
-  | Express.BaseControllerTrace = framework.BaseControllerTrace;
+const BaseController: {
+  enumerable: boolean;
+  get: () => Next.BaseController | Express.BaseController;
+} = getExports(framework.BaseController);
+
+const BaseControllerDefault: {
+  enumerable: boolean;
+  get: () => Next.BaseControllerDefault | Express.BaseControllerDefault;
+} = getExports(framework.BaseControllerDefault);
+
+const BaseControllerCreate: {
+  enumerable: boolean;
+  get: () => Next.BaseControllerCreate | Express.BaseControllerCreate;
+} = getExports(framework.BaseControllerCreate);
+
+const BaseControllerRead: {
+  enumerable: boolean;
+  get: () => Next.BaseControllerRead | Express.BaseControllerRead;
+} = getExports(framework.BaseControllerRead);
+
+const BaseControllerUpdate: {
+  enumerable: boolean;
+  get: () => Next.BaseControllerUpdate | Express.BaseControllerUpdate;
+} = getExports(framework.BaseControllerUpdate);
+
+const BaseControllerDelete: {
+  enumerable: boolean;
+  get: () => Next.BaseControllerDelete | Express.BaseControllerDelete;
+} = getExports(framework.BaseControllerDelete);
+
+const BaseControllerConnect: {
+  enumerable: boolean;
+  get: () => Next.BaseControllerConnect | Express.BaseControllerConnect;
+} = getExports(framework.BaseControllerConnect);
+
+const BaseControllerHead: {
+  enumerable: boolean;
+  get: () => Next.BaseControllerHead | Express.BaseControllerHead;
+} = getExports(framework.BaseControllerHead);
+
+const BaseControllerTrace: {
+  enumerable: boolean;
+  get: () => Next.BaseControllerTrace | Express.BaseControllerTrace;
+} = getExports(framework.BaseControllerTrace);
 
 export {
   RouterSingleton,

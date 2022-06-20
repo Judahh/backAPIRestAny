@@ -10,13 +10,15 @@ do
 done
 
 pwd=$(pwd)
+cd $pwd;
 
-if [ ! -f .env ]
-then
-  (cd $pwd ; export $(cat .env | xargs))
+if [ -f ".env" ]; then
+    echo ".env exists."
+    export $(cat .env | grep -v '#' | sed 's/\r$//' | awk '/=/ {print $1}' )
 fi
 
-port="${PORT:-port}"
+port="${PORT:=3000}"
+
 echo "setted Port: ${port}"
 
 if [ "$framework" = "express" ]; then
