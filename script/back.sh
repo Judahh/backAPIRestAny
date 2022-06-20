@@ -11,22 +11,7 @@ done
 
 pwd=$(pwd)
 
-if [ "$framework" = "next" ]; then
-    echo "Using Next.js"
-    case $exec in
-        "dev")
-            (cd $pwd ; backNext -d)
-            ;;
-
-        "build")
-            (cd $pwd ; backNext -b)
-            ;;
-
-        "")
-            (cd $pwd ; backNext)
-            ;;
-    esac
-else
+if [ "$framework" = "express" ]; then
     echo "Using EXPRESS"
     case $exec in
         "dev")
@@ -39,6 +24,21 @@ else
 
         "")
             (cd $pwd ; backExpress)
+            ;;
+    esac
+else
+    echo "Using Next"
+    case $exec in
+        "dev")
+            (cd $pwd ; backNext -d)
+            ;;
+
+        "build")
+            (cd $pwd ; backNext -b)
+            ;;
+
+        "")
+            (cd $pwd ; backNext)
             ;;
     esac
 fi

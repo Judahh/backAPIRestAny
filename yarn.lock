@@ -280,9 +280,9 @@
     to-fast-properties "^2.0.0"
 
 "@backapirest/express@latest":
-  version "2.0.14"
-  resolved "https://registry.yarnpkg.com/@backapirest/express/-/express-2.0.14.tgz#08304c9bbbf854d1216ee35ee56bbdf8f27bcd4a"
-  integrity sha512-drlwoW0rkgYFhyoVvFPaaSuhwMbm5fjmk2cgZAr7Kl1tYJMcmOJfKpsmSeNNt99OFu/a7RpTVszW49l/3/Ll+Q==
+  version "2.0.15"
+  resolved "https://registry.yarnpkg.com/@backapirest/express/-/express-2.0.15.tgz#72b9f6e482d4c6e36e064ef4566420ff78d39748"
+  integrity sha512-pM4dZ8SSyZ4nCDIBXXjxmKwUg7rXyA6Sk+arUL4na6YYKhUyaPIuMBHPFsPnxxlrcxKV0DhUs/2HrBwkmRA2hQ==
   dependencies:
     backapi latest
     backapirest latest
@@ -293,9 +293,9 @@
     pg latest
 
 "@backapirest/next@latest":
-  version "2.0.14"
-  resolved "https://registry.yarnpkg.com/@backapirest/next/-/next-2.0.14.tgz#31b7bc7d24375dd4a2127af275d846b8841b04da"
-  integrity sha512-yp1d3pQwe4sKOFOALUlgMMN+VWiXRN20I1X+gXvlTZRyvdzQjUfSyOpdzgTwnZASXyOSnLNjSjJVTAhrccF8Cg==
+  version "2.0.15"
+  resolved "https://registry.yarnpkg.com/@backapirest/next/-/next-2.0.15.tgz#5df99791966860d48df3d89d2bb0f09658632a83"
+  integrity sha512-6Iha6/T9QApbO4v1GoqxeFR+7svWFA+jfHzwNPqb8cEl13Mxl2ff+WzvNppy10NAXCNXbPrWlPDq5UL1Qj05LA==
   dependencies:
     backapi latest
     backapirest latest

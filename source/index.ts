@@ -2,6 +2,9 @@ import * as next from '@backapirest/next';
 
 import * as express from '@backapirest/express';
 
+import dotEnv from 'dotenv';
+dotEnv.config();
+
 const anyT = process.env.BACK_API_REST_FRAMEWORK === 'express' ? express : next;
 const request = anyT.request;
 const SimpleApp = (anyT as any).SimpleApp as express.SimpleApp;
