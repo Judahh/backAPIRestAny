@@ -40,55 +40,43 @@ dotEnv.config();
 
 const isExpress = process.env.BACK_API_REST_FRAMEWORK === 'express';
 
-const request = isExpress ? requestExpress : requestNext;
-const BaseController = isExpress ? BaseControllerExpress : BaseControllerNext;
-const BaseControllerDefault = isExpress
-  ? BaseControllerDefaultExpress
-  : BaseControllerDefaultNext;
-const BaseControllerDelete = isExpress
-  ? BaseControllerDeleteExpress
-  : BaseControllerDeleteNext;
-const BaseControllerRead = isExpress
-  ? BaseControllerReadExpress
-  : BaseControllerReadNext;
-const BaseControllerCreate = isExpress
-  ? BaseControllerCreateExpress
-  : BaseControllerCreateNext;
-const BaseControllerUpdate = isExpress
-  ? BaseControllerUpdateExpress
-  : BaseControllerUpdateNext;
-const BaseControllerConnect = isExpress
-  ? BaseControllerConnectExpress
-  : BaseControllerConnectNext;
-const BaseControllerHead = isExpress
-  ? BaseControllerHeadExpress
-  : BaseControllerHeadNext;
-const BaseControllerTrace = isExpress
-  ? BaseControllerTraceExpress
-  : BaseControllerTraceNext;
-const RouterSingleton = isExpress
-  ? RouterSingletonExpress
-  : RouterSingletonNext;
-
 export {
   SimpleApp,
-  BaseController,
-  BaseControllerDefault,
-  BaseControllerDelete,
-  BaseControllerRead,
-  BaseControllerCreate,
-  BaseControllerUpdate,
-  BaseControllerConnect,
-  BaseControllerHead,
-  BaseControllerTrace,
-  RouterSingleton,
   Mixin,
   RouterCreator,
-  request,
-  baseRouter,
-  controller,
-  createRoutes,
   requestAllow,
   stepIndex,
   timer,
+  baseRouter,
+  controller,
+  createRoutes,
 };
+exports.request = isExpress ? requestExpress : requestNext;
+exports.BaseController = isExpress ? BaseControllerExpress : BaseControllerNext;
+exports.BaseControllerDefault = isExpress
+  ? BaseControllerDefaultExpress
+  : BaseControllerDefaultNext;
+exports.BaseControllerDelete = isExpress
+  ? BaseControllerDeleteExpress
+  : BaseControllerDeleteNext;
+exports.BaseControllerRead = isExpress
+  ? BaseControllerReadExpress
+  : BaseControllerReadNext;
+exports.BaseControllerCreate = isExpress
+  ? BaseControllerCreateExpress
+  : BaseControllerCreateNext;
+exports.BaseControllerUpdate = isExpress
+  ? BaseControllerUpdateExpress
+  : BaseControllerUpdateNext;
+exports.BaseControllerConnect = isExpress
+  ? BaseControllerConnectExpress
+  : BaseControllerConnectNext;
+exports.BaseControllerHead = isExpress
+  ? BaseControllerHeadExpress
+  : BaseControllerHeadNext;
+exports.BaseControllerTrace = isExpress
+  ? BaseControllerTraceExpress
+  : BaseControllerTraceNext;
+exports.RouterSingleton = isExpress
+  ? RouterSingletonExpress
+  : RouterSingletonNext;

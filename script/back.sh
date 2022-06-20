@@ -9,14 +9,15 @@ do
     esac
 done
 
-port="${PORT:-port}"
-echo "Port: ${port}"
 pwd=$(pwd)
-cd $pwd
+
 if [ ! -f .env ]
 then
-  export $(cat .env | xargs)
+  (cd $pwd ; export $(cat .env | xargs))
 fi
+
+port="${PORT:-port}"
+echo "setted Port: ${port}"
 
 if [ "$framework" = "express" ]; then
     echo "Using EXPRESS"
