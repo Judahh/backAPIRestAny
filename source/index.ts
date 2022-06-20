@@ -40,6 +40,13 @@ dotEnv.config();
 
 const isExpress = process.env.BACK_API_REST_FRAMEWORK === 'express';
 
+const dExport = (name: string, get: () => any) => {
+  Object.defineProperty(exports, name, {
+    enumerable: true,
+    get: get,
+  });
+};
+
 export {
   SimpleApp,
   Mixin,
@@ -51,32 +58,45 @@ export {
   controller,
   createRoutes,
 };
+
 exports.request = isExpress ? requestExpress : requestNext;
-exports.BaseController = isExpress ? BaseControllerExpress : BaseControllerNext;
-exports.BaseControllerDefault = isExpress
-  ? BaseControllerDefaultExpress
-  : BaseControllerDefaultNext;
-exports.BaseControllerDelete = isExpress
-  ? BaseControllerDeleteExpress
-  : BaseControllerDeleteNext;
-exports.BaseControllerRead = isExpress
-  ? BaseControllerReadExpress
-  : BaseControllerReadNext;
-exports.BaseControllerCreate = isExpress
-  ? BaseControllerCreateExpress
-  : BaseControllerCreateNext;
-exports.BaseControllerUpdate = isExpress
-  ? BaseControllerUpdateExpress
-  : BaseControllerUpdateNext;
-exports.BaseControllerConnect = isExpress
-  ? BaseControllerConnectExpress
-  : BaseControllerConnectNext;
-exports.BaseControllerHead = isExpress
-  ? BaseControllerHeadExpress
-  : BaseControllerHeadNext;
-exports.BaseControllerTrace = isExpress
-  ? BaseControllerTraceExpress
-  : BaseControllerTraceNext;
-exports.RouterSingleton = isExpress
-  ? RouterSingletonExpress
-  : RouterSingletonNext;
+
+dExport('BaseController', () => {
+  return isExpress ? BaseControllerExpress : BaseControllerNext;
+});
+
+dExport('BaseControllerDefault', () => {
+  return isExpress ? BaseControllerDefaultExpress : BaseControllerDefaultNext;
+});
+
+dExport('BaseControllerDelete', () => {
+  return isExpress ? BaseControllerDeleteExpress : BaseControllerDeleteNext;
+});
+
+dExport('BaseControllerRead', () => {
+  return isExpress ? BaseControllerReadExpress : BaseControllerReadNext;
+});
+
+dExport('BaseControllerCreate', () => {
+  return isExpress ? BaseControllerCreateExpress : BaseControllerCreateNext;
+});
+
+dExport('BaseControllerUpdate', () => {
+  return isExpress ? BaseControllerUpdateExpress : BaseControllerUpdateNext;
+});
+
+dExport('BaseControllerConnect', () => {
+  return isExpress ? BaseControllerConnectExpress : BaseControllerConnectNext;
+});
+
+dExport('BaseControllerHead', () => {
+  return isExpress ? BaseControllerHeadExpress : BaseControllerHeadNext;
+});
+
+dExport('BaseControllerTrace', () => {
+  return isExpress ? BaseControllerTraceExpress : BaseControllerTraceNext;
+});
+
+dExport('RouterSingleton', () => {
+  return isExpress ? RouterSingletonExpress : RouterSingletonNext;
+});
