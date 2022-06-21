@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
+import { RouterSingleton as RouterSingletonBase } from 'backapirest';
+
 import {
-  RouterSingleton as RouterSingletonNext,
   BaseController as BaseControllerNext,
   BaseControllerDefault as BaseControllerDefaultNext,
   BaseControllerCreate as BaseControllerCreateNext,
@@ -22,7 +23,6 @@ import {
 } from '@backapirest/next';
 
 import {
-  RouterSingleton as RouterSingletonExpress,
   BaseController as BaseControllerExpress,
   BaseControllerDefault as BaseControllerDefaultExpress,
   BaseControllerCreate as BaseControllerCreateExpress,
@@ -58,51 +58,52 @@ const getExports = (toExport) => ({
 const blindExport = (name, toExport) =>
   Object.defineProperty(exports, name, getExports(toExport));
 
-const RouterSingleton: RouterSingletonNext | RouterSingletonExpress =
-  framework.RouterSingleton;
+const RouterSingleton: typeof RouterSingletonBase = framework.RouterSingleton;
 
 blindExport('RouterSingleton', RouterSingleton);
 
-const BaseController: BaseControllerNext | BaseControllerExpress =
+const BaseController: typeof BaseControllerNext | typeof BaseControllerExpress =
   framework.BaseController;
 blindExport('BaseController', BaseController);
 
 const BaseControllerDefault:
-  | BaseControllerDefaultNext
-  | BaseControllerDefaultExpress = framework.BaseControllerDefault;
+  | typeof BaseControllerDefaultNext
+  | typeof BaseControllerDefaultExpress = framework.BaseControllerDefault;
 blindExport('BaseControllerDefault', BaseControllerDefault);
 
 const BaseControllerCreate:
-  | BaseControllerCreateNext
-  | BaseControllerCreateExpress = framework.BaseControllerCreate;
+  | typeof BaseControllerCreateNext
+  | typeof BaseControllerCreateExpress = framework.BaseControllerCreate;
 blindExport('BaseControllerCreate', BaseControllerCreate);
 
-const BaseControllerRead: BaseControllerReadNext | BaseControllerReadExpress =
-  framework.BaseControllerRead;
+const BaseControllerRead:
+  | typeof BaseControllerReadNext
+  | typeof BaseControllerReadExpress = framework.BaseControllerRead;
 blindExport('BaseControllerRead', BaseControllerRead);
 
 const BaseControllerUpdate:
-  | BaseControllerUpdateNext
-  | BaseControllerUpdateExpress = framework.BaseControllerUpdate;
+  | typeof BaseControllerUpdateNext
+  | typeof BaseControllerUpdateExpress = framework.BaseControllerUpdate;
 blindExport('BaseControllerUpdate', BaseControllerUpdate);
 
 const BaseControllerDelete:
-  | BaseControllerDeleteNext
-  | BaseControllerDeleteExpress = framework.BaseControllerDelete;
+  | typeof BaseControllerDeleteNext
+  | typeof BaseControllerDeleteExpress = framework.BaseControllerDelete;
 blindExport('BaseControllerDelete', BaseControllerDelete);
 
 const BaseControllerConnect:
-  | BaseControllerConnectNext
-  | BaseControllerConnectExpress = framework.BaseControllerConnect;
+  | typeof BaseControllerConnectNext
+  | typeof BaseControllerConnectExpress = framework.BaseControllerConnect;
 blindExport('BaseControllerConnect', BaseControllerConnect);
 
-const BaseControllerHead: BaseControllerHeadNext | BaseControllerHeadExpress =
-  framework.BaseControllerHead;
+const BaseControllerHead:
+  | typeof BaseControllerHeadNext
+  | typeof BaseControllerHeadExpress = framework.BaseControllerHead;
 blindExport('BaseControllerHead', BaseControllerHead);
 
 const BaseControllerTrace:
-  | BaseControllerTraceNext
-  | BaseControllerTraceExpress = framework.BaseControllerTrace;
+  | typeof BaseControllerTraceNext
+  | typeof BaseControllerTraceExpress = framework.BaseControllerTrace;
 blindExport('BaseControllerTrace', BaseControllerTrace);
 
 export {
