@@ -43,9 +43,9 @@ const isExpress = process.env.BACK_API_REST_FRAMEWORK === 'express';
 
 let framework;
 if (isExpress) {
-  framework = require('@backapirest/next');
-} else {
   framework = require('@backapirest/express');
+} else {
+  framework = require('@backapirest/next');
 }
 
 const request: typeof requestNext | typeof requestExpress = framework.request;
