@@ -14,14 +14,17 @@ cd $pwd;
 
 if [ -f ".env" ]; then
     echo ".env exists."
-    export $(cat .env | grep -v '#' | sed 's/\r$//' | awk '/=/ {print $1}' )
+    cat .env | grep -v '#' | grep PORT
+    export $(cat .env | grep -v '#' | grep PORT)
+    cat .env | grep -v '#' | grep BACK_API_REST_FRAMEWORK
+    export $(cat .env | grep -v '#' | grep BACK_API_REST_FRAMEWORK)
 fi
 
 port="${PORT:=3000}"
 
 echo "setted Port: ${port}"
 
-if [ "$framework" = "express" ]; then
+if [ "$BACK_API_REST_FRAMEWORK" = "express" ]; then
     echo "Using EXPRESS"
     case $exec in
         "dev")

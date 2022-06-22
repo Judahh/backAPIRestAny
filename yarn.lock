@@ -280,9 +280,9 @@
     to-fast-properties "^2.0.0"
 
 "@backapirest/express@latest":
-  version "2.0.16"
-  resolved "https://registry.yarnpkg.com/@backapirest/express/-/express-2.0.16.tgz#fb78b454137840cbca2b999c70d46ebca70ccd28"
-  integrity sha512-v8xev6Q2Su3K23ZMNkL/FxdY1TqYC21lyPA956BUn0ndxTYgOfAiyb/U3yRMKgNzCDDpJN4N5sXMMXX4nvkXlw==
+  version "2.0.17"
+  resolved "https://registry.yarnpkg.com/@backapirest/express/-/express-2.0.17.tgz#724c761cc657c0e0ef1d6b074a57b0f57a01c2bf"
+  integrity sha512-tloi3l1rL4WZ/FSkBNDxK4ijsxPersIShHL31xTDC4MTaZ49ZJ87sLnuMae1yugto3d1nhpnDs1cCH+VvDtHVg==
   dependencies:
     backapi latest
     backapirest latest
@@ -293,9 +293,9 @@
     pg latest
 
 "@backapirest/next@latest":
-  version "2.0.16"
-  resolved "https://registry.yarnpkg.com/@backapirest/next/-/next-2.0.16.tgz#61bd8a9c00d219cf3b4fbabaa998d8f3dd0a72a5"
-  integrity sha512-F8ltGaZ0Uv3oPEUcQ8wVb1zhM64k6v+4nYe0EWfKXDekMgYkcAJX99zdDOjI9kXaVxfcIygS8IkGC5zd5b2aKA==
+  version "2.0.17"
+  resolved "https://registry.yarnpkg.com/@backapirest/next/-/next-2.0.17.tgz#7fd059f19c7bbf47bb3c2889f609c894f6a29639"
+  integrity sha512-1S2sIqRm6iDviCeQ+VLZ5RGL7wcbUOdafUB9In81UtANx8HJshDwqzD/kNcf3VTJtgcuG8GTTEkINjzWKIj5CA==
   dependencies:
     backapi latest
     backapirest latest
@@ -1600,9 +1600,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.4.164:
-  version "1.4.164"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.164.tgz#3d0f5c83557d8ec8a7faa531e498f198c3bd974a"
-  integrity sha512-K7iy5y6XyP9Pzh3uaDti0KC4JUNT6T1tLG5RTOmesqq2YgAJpYYYJ32m+anvZYjCV35llPTEh87kvEV/uSsiyQ==
+  version "1.4.165"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.165.tgz#a1ae079a4412b0c2d3bf6908e8db54511fb0bbac"
+  integrity sha512-DKQW1lqUSAYQvn9dnpK7mWaDpWbNOXQLXhfCi7Iwx0BKxdZOxkKcCyKw1l3ihWWW5iWSxKKbhEUoNRoHvl/hbA==
 
 emittery@^0.10.2:
   version "0.10.2"
