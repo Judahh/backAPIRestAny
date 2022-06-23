@@ -280,9 +280,9 @@
     to-fast-properties "^2.0.0"
 
 "@backapirest/express@latest":
-  version "2.0.19"
-  resolved "https://registry.yarnpkg.com/@backapirest/express/-/express-2.0.19.tgz#f766ed282e31251f62a5ee555d60000727cddff7"
-  integrity sha512-SlsguQa3BMHqFmuph8HgqVpCIftJ5/GT6SOrnjUDDdBn59SQkhDsUM0OcYNQAZu6HjWFy+34S/NuEHrAsmwLTA==
+  version "2.0.20"
+  resolved "https://registry.yarnpkg.com/@backapirest/express/-/express-2.0.20.tgz#d9d9e40f33e826b7220c915e58274ca060faa97a"
+  integrity sha512-GNWqNcgxTlbTjcGEB3rJg0ii302Ilnx5XYKHBTNbF/7dAHiklSA0hMCEHzjpRJJw/rdatxQNHsCer4KkYjWDPQ==
   dependencies:
     backapi latest
     backapirest latest
@@ -293,9 +293,9 @@
     pg latest
 
 "@backapirest/next@latest":
-  version "2.0.18"
-  resolved "https://registry.yarnpkg.com/@backapirest/next/-/next-2.0.18.tgz#c0b218dd291cf0ea1e0ad2b30fabf4f5c65cda4a"
-  integrity sha512-+4WWg4eRfgppVsN+DufwJB/fFxQt+gvsiStzA66zZax2QZyY5DkXWIBF7pM0r1FDkBVbiuvl2XhbCoBIQ3YPiA==
+  version "2.0.20"
+  resolved "https://registry.yarnpkg.com/@backapirest/next/-/next-2.0.20.tgz#95ab387e70eb28fa11510a40c1701c162901396b"
+  integrity sha512-ROSEGCcSs0+btDztP0u5eHolLwMU3eNArLilN3SREiH2meVapXfzwZ47wDaknOH2N/n8l4LpxidAYWeGfe9vmQ==
   dependencies:
     backapi latest
     backapirest latest
@@ -1600,9 +1600,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.4.164:
-  version "1.4.165"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.165.tgz#a1ae079a4412b0c2d3bf6908e8db54511fb0bbac"
-  integrity sha512-DKQW1lqUSAYQvn9dnpK7mWaDpWbNOXQLXhfCi7Iwx0BKxdZOxkKcCyKw1l3ihWWW5iWSxKKbhEUoNRoHvl/hbA==
+  version "1.4.167"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.167.tgz#72424aebc85df12c5331d37b1bcfd1ae01322c55"
+  integrity sha512-lPHuHXBwpkr4RcfaZBKm6TKOWG/1N9mVggUpP4fY3l1JIUU2x4fkM8928smYdZ5lF+6KCTAxo1aK9JmqT+X71Q==
 
 emittery@^0.10.2:
   version "0.10.2"
@@ -3345,9 +3345,9 @@ node-releases@^2.0.5:
   integrity sha512-U9h1NLROZTq9uE1SNffn6WuPDg8icmi3ns4rEl/oTfIle4iLjTliCzgTsbaIFMq/Xn078/lfY/BL0GWZ+psK4Q==
 
 nodemon@latest:
-  version "2.0.16"
-  resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-2.0.16.tgz#d71b31bfdb226c25de34afea53486c8ef225fdef"
-  integrity sha512-zsrcaOfTWRuUzBn3P44RDliLlp263Z/76FPoHFr3cFFkOz0lTPAcIw8dCzfdVIx/t3AtDYCZRCDkoCojJqaG3w==
+  version "2.0.18"
+  resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-2.0.18.tgz#0f5a3aa7b4587f2626e6f01369deba89cb0462a2"
+  integrity sha512-uAvrKipi2zAz8E7nkSz4qW4F4zd5fs2wNGsTx+xXlP8KXqd9ucE0vY9wankOsPboeDyuUGN9vsXGV1pLn80l/A==
   dependencies:
     chokidar "^3.5.2"
     debug "^3.2.7"
@@ -4348,9 +4348,9 @@ unpipe@1.0.0, unpipe@~1.0.0:
   integrity sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==
 
 update-browserslist-db@^1.0.0:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/update-browserslist-db/-/update-browserslist-db-1.0.3.tgz#6c47cb996f34afb363e924748e2f6e4d983c6fc1"
-  integrity sha512-ufSazemeh9Gty0qiWtoRpJ9F5Q5W3xdIPm1UZQqYQv/q0Nyb9EMHUB2lu+O9x1re9WsorpMAUu4Y6Lxcs5n+XQ==
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/update-browserslist-db/-/update-browserslist-db-1.0.4.tgz#dbfc5a789caa26b1db8990796c2c8ebbce304824"
+  integrity sha512-jnmO2BEGUjsMOe/Fg9u0oczOe/ppIDZPebzccl1yDWGLFP16Pa1/RM5wEoKYPG2zstNcDuAStejyxsOuKINdGA==
   dependencies:
     escalade "^3.1.1"
     picocolors "^1.0.0"
