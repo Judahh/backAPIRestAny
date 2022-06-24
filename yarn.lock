@@ -280,9 +280,9 @@
     to-fast-properties "^2.0.0"
 
 "@backapirest/express@latest":
-  version "2.0.22"
-  resolved "https://registry.yarnpkg.com/@backapirest/express/-/express-2.0.22.tgz#5a1f1e376c10d6227edae22cf7ea176c18da828e"
-  integrity sha512-0cuSZV3vaTjqHG/9c45vgGubGBJ9t1YvmR8SX6bWWRc4/Qpxg2JPdLEqYtgH8Zxaha8T/lPJmn67BRNir3oOPw==
+  version "2.0.23"
+  resolved "https://registry.yarnpkg.com/@backapirest/express/-/express-2.0.23.tgz#193415fb72530fcd98c203a50fedb07a09425c26"
+  integrity sha512-rjY8mixZnEv+Ph3y6+kBAOXWdIR9KrqjaQb6Tk9uIJ8dLgJcW87GsIYj6PcMqVoaLImjJqjQ3uW5oBZrnZmALw==
   dependencies:
     backapi latest
     backapirest latest
