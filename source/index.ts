@@ -1,16 +1,18 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-import { RouterSingleton as RouterSingletonBase } from 'backapirest';
+import {
+  RouterSingleton as RouterSingletonBase,
+  BaseController as BaseControllerRest,
+  BaseControllerDefault as BaseControllerDefaultRest,
+  BaseControllerCreate as BaseControllerCreateRest,
+  BaseControllerRead as BaseControllerReadRest,
+  BaseControllerUpdate as BaseControllerUpdateRest,
+  BaseControllerDelete as BaseControllerDeleteRest,
+  BaseControllerConnect as BaseControllerConnectRest,
+  BaseControllerHead as BaseControllerHeadRest,
+  BaseControllerTrace as BaseControllerTraceRest,
+} from 'backapirest';
 
 import {
-  BaseController as BaseControllerNext,
-  BaseControllerDefault as BaseControllerDefaultNext,
-  BaseControllerCreate as BaseControllerCreateNext,
-  BaseControllerRead as BaseControllerReadNext,
-  BaseControllerUpdate as BaseControllerUpdateNext,
-  BaseControllerDelete as BaseControllerDeleteNext,
-  BaseControllerConnect as BaseControllerConnectNext,
-  BaseControllerHead as BaseControllerHeadNext,
-  BaseControllerTrace as BaseControllerTraceNext,
   request as requestNext,
   Mixin,
   RouterCreator,
@@ -22,19 +24,7 @@ import {
   timer,
 } from '@backapirest/next';
 
-import {
-  BaseController as BaseControllerExpress,
-  BaseControllerDefault as BaseControllerDefaultExpress,
-  BaseControllerCreate as BaseControllerCreateExpress,
-  BaseControllerRead as BaseControllerReadExpress,
-  BaseControllerUpdate as BaseControllerUpdateExpress,
-  BaseControllerDelete as BaseControllerDeleteExpress,
-  BaseControllerConnect as BaseControllerConnectExpress,
-  BaseControllerHead as BaseControllerHeadExpress,
-  BaseControllerTrace as BaseControllerTraceExpress,
-  request as requestExpress,
-  SimpleApp,
-} from '@backapirest/express';
+import { request as requestExpress, SimpleApp } from '@backapirest/express';
 
 import dotEnv from 'dotenv';
 dotEnv.config();
@@ -62,48 +52,39 @@ const RouterSingleton: typeof RouterSingletonBase = framework.RouterSingleton;
 
 blindExport('RouterSingleton', RouterSingleton);
 
-const BaseController: typeof BaseControllerNext | typeof BaseControllerExpress =
-  framework.BaseController;
+const BaseController: typeof BaseControllerRest = framework.BaseController;
 blindExport('BaseController', BaseController);
 
-const BaseControllerDefault:
-  | typeof BaseControllerDefaultNext
-  | typeof BaseControllerDefaultExpress = framework.BaseControllerDefault;
+const BaseControllerDefault: typeof BaseControllerDefaultRest =
+  framework.BaseControllerDefault;
 blindExport('BaseControllerDefault', BaseControllerDefault);
 
-const BaseControllerCreate:
-  | typeof BaseControllerCreateNext
-  | typeof BaseControllerCreateExpress = framework.BaseControllerCreate;
+const BaseControllerCreate: typeof BaseControllerCreateRest =
+  framework.BaseControllerCreate;
 blindExport('BaseControllerCreate', BaseControllerCreate);
 
-const BaseControllerRead:
-  | typeof BaseControllerReadNext
-  | typeof BaseControllerReadExpress = framework.BaseControllerRead;
+const BaseControllerRead: typeof BaseControllerReadRest =
+  framework.BaseControllerRead;
 blindExport('BaseControllerRead', BaseControllerRead);
 
-const BaseControllerUpdate:
-  | typeof BaseControllerUpdateNext
-  | typeof BaseControllerUpdateExpress = framework.BaseControllerUpdate;
+const BaseControllerUpdate: typeof BaseControllerUpdateRest =
+  framework.BaseControllerUpdate;
 blindExport('BaseControllerUpdate', BaseControllerUpdate);
 
-const BaseControllerDelete:
-  | typeof BaseControllerDeleteNext
-  | typeof BaseControllerDeleteExpress = framework.BaseControllerDelete;
+const BaseControllerDelete: typeof BaseControllerDeleteRest =
+  framework.BaseControllerDelete;
 blindExport('BaseControllerDelete', BaseControllerDelete);
 
-const BaseControllerConnect:
-  | typeof BaseControllerConnectNext
-  | typeof BaseControllerConnectExpress = framework.BaseControllerConnect;
+const BaseControllerConnect: typeof BaseControllerConnectRest =
+  framework.BaseControllerConnect;
 blindExport('BaseControllerConnect', BaseControllerConnect);
 
-const BaseControllerHead:
-  | typeof BaseControllerHeadNext
-  | typeof BaseControllerHeadExpress = framework.BaseControllerHead;
+const BaseControllerHead: typeof BaseControllerHeadRest =
+  framework.BaseControllerHead;
 blindExport('BaseControllerHead', BaseControllerHead);
 
-const BaseControllerTrace:
-  | typeof BaseControllerTraceNext
-  | typeof BaseControllerTraceExpress = framework.BaseControllerTrace;
+const BaseControllerTrace: typeof BaseControllerTraceRest =
+  framework.BaseControllerTrace;
 blindExport('BaseControllerTrace', BaseControllerTrace);
 
 export {
