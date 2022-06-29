@@ -24,34 +24,55 @@ port="${PORT:=3000}"
 
 echo "setted Port: ${port}"
 
-if [ "$BACK_API_REST_FRAMEWORK" = "express" ]; then
-    echo "Using EXPRESS"
-    case $exec in
-        "dev")
-            (cd $pwd ; backExpress -d)
-            ;;
+case $BACK_API_REST_FRAMEWORK in
+    "express")
+        echo "Using EXPRESS"
+        case $exec in
+            "dev")
+                (cd $pwd ; backExpress -d)
+                ;;
 
-        "build")
-            (cd $pwd ; backExpress -b)
-            ;;
+            "build")
+                (cd $pwd ; backExpress -b)
+                ;;
 
-        "")
-            (cd $pwd ; backExpress)
-            ;;
-    esac
-else
-    echo "Using Next"
-    case $exec in
-        "dev")
-            (cd $pwd ; backNext -d)
-            ;;
+            "")
+                (cd $pwd ; backExpress)
+                ;;
+        esac
+        ;;
 
-        "build")
-            (cd $pwd ; backNext -b)
-            ;;
+    "aws"|"aws-lambda")
+        echo "Using AWS"
+        case $exec in
+            "dev")
+                (cd $pwd ; backAWSLambda -d)
+                ;;
 
-        "")
-            (cd $pwd ; backNext)
-            ;;
-    esac
-fi
+            "build")
+                (cd $pwd ; backAWSLambda -b)
+                ;;
+
+            "")
+                (cd $pwd ; backAWSLambda)
+                ;;
+        esac
+        ;;
+
+    *)
+        echo "Using NEXT"
+        case $exec in
+            "dev")
+                (cd $pwd ; backNext -d)
+                ;;
+
+            "build")
+                (cd $pwd ; backNext -b)
+                ;;
+
+            "")
+                (cd $pwd ; backNext)
+                ;;
+        esac
+        ;;
+esac

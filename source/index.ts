@@ -29,13 +29,30 @@ import { request as requestExpress, SimpleApp } from '@backapirest/express';
 import dotEnv from 'dotenv';
 dotEnv.config();
 
-const isExpress = process.env.BACK_API_REST_FRAMEWORK === 'express';
-
 let framework;
-if (isExpress) {
-  framework = require('@backapirest/express');
-} else {
-  framework = require('@backapirest/next');
+
+switch (process.env.BACK_API_REST_FRAMEWORK) {
+  case 'express':
+    framework = require('@backapirest/express');
+    break;
+
+  case 'aws':
+  case 'aws-lambda':
+    framework = require('@backapirest/aws-lambda');
+    break;
+
+  case 'gcp':
+  case 'gcp-function':
+  case 'digital-ocean':
+  case 'digital-ocean-function':
+  case 'oci':
+  case 'oci-function':
+  case 'azure':
+  case 'azure-function':
+  case 'next':
+  default:
+    framework = require('@backapirest/next');
+    break;
 }
 
 const request: typeof requestNext | typeof requestExpress = framework.request;
