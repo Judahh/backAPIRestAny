@@ -280,9 +280,9 @@
     to-fast-properties "^2.0.0"
 
 "@backapirest/aws-lambda@latest":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@backapirest/aws-lambda/-/aws-lambda-0.0.2.tgz#0b0f3814e2483299c1b30101965c5efe00c2054d"
-  integrity sha512-xhGpGcGQD6aJc4pP5TF5XUltHPIQp6MFu5VNw66eIidMLxHcOj8VRn+YQgaoZV1D8T0XKyjoNs+OMmiBWWFLeA==
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@backapirest/aws-lambda/-/aws-lambda-0.0.3.tgz#d90f4c43257ba9aec96eacd8c9cfd80fd08a0ecd"
+  integrity sha512-oJGKvDuswOlV+13gNfAZ23Nr4omv9sokZd5tsieJnE1dCsw3Tn/FpJjqnkiL7RN/mqo5HnacuUPvCxVeZ7seGg==
   dependencies:
     aws-lambda latest
     backapi latest
@@ -1090,9 +1090,9 @@ aws-lambda@latest:
     watchpack "^2.0.0-beta.10"
 
 aws-sdk@^2.814.0:
-  version "2.1164.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1164.0.tgz#050ce644ed9993582bd02151bf3ac9d9ebc143f5"
-  integrity sha512-q/M9E68WabF22G8d8lFgo3NH+9RooYswSY9VG6zqN16C19RRm2sGThp8Sxtz/WUK98BAsxSnkLW1ksmy3BsP7Q==
+  version "2.1165.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1165.0.tgz#4da669d1e9020344cef75d961882f52a7931a379"
+  integrity sha512-2oVkSuXsLeErt+H4M2OGIz4p1LPS+QRfY2WnW4QKMndASOcvHKZTfzuY8jmc9ZnDGyguiGdT3idYU8KpNg0sGw==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
