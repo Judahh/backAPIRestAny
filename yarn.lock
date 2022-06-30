@@ -280,9 +280,9 @@
     to-fast-properties "^2.0.0"
 
 "@backapirest/aws-lambda@latest":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@backapirest/aws-lambda/-/aws-lambda-0.0.3.tgz#d90f4c43257ba9aec96eacd8c9cfd80fd08a0ecd"
-  integrity sha512-oJGKvDuswOlV+13gNfAZ23Nr4omv9sokZd5tsieJnE1dCsw3Tn/FpJjqnkiL7RN/mqo5HnacuUPvCxVeZ7seGg==
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@backapirest/aws-lambda/-/aws-lambda-0.0.4.tgz#5e1020a5b365d26ee19a7f1ada56721e7a800ad6"
+  integrity sha512-peR2GLFSLv2NZv+wOSll5HAgZ0WgBzD0LK0KENogiNLsIkdPkYTr+wzoXlXtZ3DantFq2rl2JPi3G3wwBHuRXQ==
   dependencies:
     aws-lambda latest
     backapi latest
@@ -1663,9 +1663,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.4.172:
-  version "1.4.173"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.173.tgz#48f128dda49cd7f6317e65ac0085bd3a6b9b6e3b"
-  integrity sha512-Qo3LnVW6JRNhD32viSdPebxKI7K+3WeBDjU1+Q2yZS83zAh8C2LyPpzTimlciv6U74KpY9n/0ESAhUByRke0jw==
+  version "1.4.174"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.174.tgz#ffdf57f26dd4558c5aabdb4b190c47af1c4e443b"
+  integrity sha512-JER+w+9MV2MBVFOXxP036bLlNOnzbYAWrWU8sNUwoOO69T3w4564WhM5H5atd8VVS8U4vpi0i0kdoYzm1NPQgQ==
 
 emittery@^0.10.2:
   version "0.10.2"
@@ -1822,9 +1822,9 @@ eslint-plugin-import@latest:
     tsconfig-paths "^3.14.1"
 
 eslint-plugin-prettier@latest:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-4.1.0.tgz#1cd4b3fadf3b3cdb30b1874b55e7f93f85eb43ad"
-  integrity sha512-A3AXIEfTnq3D5qDFjWJdQ9c4BLhw/TqhSR+6+SVaoPJBAWciFEuJiNQh275OnjRrAi7yssZzuWBRw66VG2g6UA==
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-4.2.1.tgz#651cbb88b1dab98bfd42f017a12fa6b2d993f94b"
+  integrity sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
