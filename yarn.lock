@@ -280,9 +280,9 @@
     to-fast-properties "^2.0.0"
 
 "@backapirest/aws-lambda@latest":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@backapirest/aws-lambda/-/aws-lambda-0.0.4.tgz#5e1020a5b365d26ee19a7f1ada56721e7a800ad6"
-  integrity sha512-peR2GLFSLv2NZv+wOSll5HAgZ0WgBzD0LK0KENogiNLsIkdPkYTr+wzoXlXtZ3DantFq2rl2JPi3G3wwBHuRXQ==
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@backapirest/aws-lambda/-/aws-lambda-0.0.5.tgz#d6d87d41e41f4c50c1fb9d98d9ddd4b80a83936c"
+  integrity sha512-x8hxDReHSSNHKyRfLhhWAHUJjfc50fPvop8WMKBcENxhDTiGUnXzVGlpF1sNjAnrcfy5Psem9YasB4T2guHAmw==
   dependencies:
     aws-lambda latest
     backapi latest
