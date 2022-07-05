@@ -280,9 +280,9 @@
     to-fast-properties "^2.0.0"
 
 "@backapirest/aws-lambda@latest":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@backapirest/aws-lambda/-/aws-lambda-0.1.0.tgz#5e3cf01d01fe6cc3b1c8528e6ca6080771c64a3d"
-  integrity sha512-471/TJ8/ijy25vpFuGkuTRbRacAtYWG88FkMA9vnU0iX5Kd2n2MGk+IzQh9qlX51GKgxDzfc/g2X9sk8/wx9FA==
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@backapirest/aws-lambda/-/aws-lambda-0.1.1.tgz#cd6b000236b0aa208aee17da7676366fe5f6e9e2"
+  integrity sha512-5s/C8BoKgFM13Y+nkMsi/A1xsgBT2w/TfRho0no6rnPUhHPJpYKEBRdGqMXg9PvPgwq8fQuhFZxwzzRN/JP3oA==
   dependencies:
     aws-lambda latest
     backapi latest
@@ -295,9 +295,9 @@
     webpack-node-externals latest
 
 "@backapirest/express@latest":
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/@backapirest/express/-/express-3.0.3.tgz#4f2e9a24ce9e2aa092c39f8d5a5463a303fd0547"
-  integrity sha512-12u1LjF3WrDnZ0lUNymOq/8Wft/5/nvOg2jc2ov0vRDmTNBFCR2PBqm+VC+PGb+tg6xTPozNUAD3xuyn7o53JQ==
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@backapirest/express/-/express-3.0.4.tgz#60953f4490d3c5b0e8a1cb829dbfd021955231e3"
+  integrity sha512-sLgC8UfMim3fv8GFt7ghQgzrQEUGXrnR53m1XgfY3FPhdXJzQ83XbK/Xb1NZZhL02hKqRTb6QFAOCYdo893zUA==
   dependencies:
     backapi latest
     backapirest latest
@@ -308,9 +308,9 @@
     pg latest
 
 "@backapirest/next@latest":
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/@backapirest/next/-/next-3.0.3.tgz#8182e62e3e571f1f5944cfc120ecd6249fe0cad6"
-  integrity sha512-gjh2fcJ4hrfPjcfWJ6KcqVUMdoDcaxNrM1F1kH6oTthdH6FLSZk0l69FqWKnG7LtpQuwBTFwksghIZmxu6Vdsg==
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@backapirest/next/-/next-3.0.4.tgz#429fc68f342f2dfb2de27baddf855fd4805bb6d9"
+  integrity sha512-RSCWVFfBMPpTl7OodyCdUWwgej4CfFByl9jB2ND1ZXKaK6GwOCu9lF65bveyWapMoU2Nkm0U/VbMbrqhnzmEKg==
   dependencies:
     backapi latest
     backapirest latest
@@ -1343,9 +1343,9 @@ babel-preset-jest@^28.1.1:
     babel-preset-current-node-syntax "^1.0.0"
 
 backapi@latest:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/backapi/-/backapi-3.1.2.tgz#a355fd169ff0f764d60ad43374c7bc5aefd7b1be"
-  integrity sha512-qKmQYt4jAsBBBKRlpIRHkwK+s7bpODgJNe2e7yrHeGcnJiI593qpy5jxLUBCxrD7AUOPVRLW7a7JaVznN4Tp3w==
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/backapi/-/backapi-3.1.3.tgz#8052d851109f26aa113aa9302760f16f169393a3"
+  integrity sha512-b9+dbrhALL7RVDIFAsIgsGGCfTnP5FTi3NexTWM6vqyosK6qoiMfzlLfMAf8Q2cwmW2F4ZZCfwMr/O6qIkWfkw==
   dependencies:
     "@flexiblepersistence/default-initializer" latest
     "@flexiblepersistence/service" latest
@@ -1354,9 +1354,9 @@ backapi@latest:
     ts-mixer latest
 
 backapirest@latest:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/backapirest/-/backapirest-3.1.2.tgz#23a280e7491c11bd7b8ebf3d23c98a057217f18f"
-  integrity sha512-dWRzaJpITAs8e7pXrx4j2QVQGh/u6ejna9+QEe0IluO/7pYVqr+81BOhJwvGJuTIgIOuc3KEJNwv1TU7SkZjxg==
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/backapirest/-/backapirest-3.1.3.tgz#08564ce61fd435e96290e9eb0de1b6531f7b634a"
+  integrity sha512-2thxNkgUr6CnwzlrOhE1fGS1qjZWES4ueJkA++oi7KqXC8H9L89rZqDO+GIVwnnyFxINJ6XqVYfJGYgSMFbu1g==
   dependencies:
     "@flexiblepersistence/default-initializer" latest
     "@flexiblepersistence/service" latest
@@ -3570,9 +3570,9 @@ mongodb@4.7.0, mongodb@latest:
     saslprep "^1.0.3"
 
 mongoose@latest:
-  version "6.4.2"
-  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-6.4.2.tgz#79efd7f1e606114045a3de2bbd0a0972823d02dc"
-  integrity sha512-VRotms+XC42vPlS3Tr2GTg0qkppHzWob62sUjdC22ir8aqWVrbCsHjEuMsL6zZlKSIj8zNBODm9hRV+RHRiLRQ==
+  version "6.4.3"
+  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-6.4.3.tgz#a44978adb987fb98c8339629e83e16e07e9cbdcd"
+  integrity sha512-JuEdgpDxYIqG+V85LzNn7LKIr73ixnKVbmEhJNSf3vF1+QmIfar5S0wfL/s3CSM3qs/p6J2vWirOle1INW5VCA==
   dependencies:
     bson "^4.6.2"
     kareem "2.4.1"
