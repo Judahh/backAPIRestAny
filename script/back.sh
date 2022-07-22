@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-while getopts p:db flag
+while getopts p:dmb flag
 do
     case "${flag}" in
         p) port=${OPTARG};;
