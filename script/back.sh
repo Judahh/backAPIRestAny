@@ -5,6 +5,7 @@ do
     case "${flag}" in
         p) port=${OPTARG};;
         d) exec="dev";;
+        m) exec="migrate";;
         b) exec="build";;
     esac
 done
@@ -36,6 +37,10 @@ case $BACK_API_REST_FRAMEWORK in
                 (cd $pwd ; backExpress -b)
                 ;;
 
+            "migrate")
+                (cd $pwd ; backExpress -m)
+                ;;
+
             "")
                 (cd $pwd ; backExpress)
                 ;;
@@ -53,6 +58,10 @@ case $BACK_API_REST_FRAMEWORK in
                 (cd $pwd ; backAWSLambda -b)
                 ;;
 
+            "migrate")
+                (cd $pwd ; backAWSLambda -m)
+                ;;
+
             "")
                 (cd $pwd ; backAWSLambda)
                 ;;
@@ -68,6 +77,10 @@ case $BACK_API_REST_FRAMEWORK in
 
             "build")
                 (cd $pwd ; backNext -b)
+                ;;
+
+            "migrate")
+                (cd $pwd ; backNext -m)
                 ;;
 
             "")
