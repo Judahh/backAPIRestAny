@@ -2085,9 +2085,9 @@ babel-preset-jest@^29.2.0:
     babel-preset-current-node-syntax "^1.0.0"
 
 backapi@latest:
-  version "3.1.9"
-  resolved "https://registry.yarnpkg.com/backapi/-/backapi-3.1.9.tgz#ec062580af634683e2afd15856eb41bea5aee243"
-  integrity sha512-tB2A54R8tclYZlFRyIsc/afWr2lwjFvCqhfkekgoxly2WPPyXzEG/3ltEewL2+Ilc9F2YQayIKEAyufyorx2SQ==
+  version "3.1.10"
+  resolved "https://registry.yarnpkg.com/backapi/-/backapi-3.1.10.tgz#4cb049d003aae00de08b9b5e87cf3af44e28859c"
+  integrity sha512-MD2xeFf1c/mzJV5oiURAImvD3LXk2he+p3BvLjeh0WhrobZPbLniOtb9xDEVecH/xy9ynCY9No+IX0C/Rm8FOA==
   dependencies:
     "@flexiblepersistence/default-initializer" latest
     "@flexiblepersistence/service" latest
@@ -2096,9 +2096,9 @@ backapi@latest:
     ts-mixer latest
 
 backapirest@latest:
-  version "3.1.10"
-  resolved "https://registry.yarnpkg.com/backapirest/-/backapirest-3.1.10.tgz#5865c17a98f0c9450751cfef604e7cd22bdcf120"
-  integrity sha512-cJLNS96Q3JZVl1CgccxYJ3kWJHFTuUbTPA5HRry2ADAQDGFkhJwphYH4nB6WR95eWyNA2Vy/cweKfOeXNLQV2g==
+  version "3.1.11"
+  resolved "https://registry.yarnpkg.com/backapirest/-/backapirest-3.1.11.tgz#acd6a3c71714853cbd4df2bb72dfdc73d79c0277"
+  integrity sha512-XYTtX1E5h1pS3LEN6axCbDSgXOtx9lkYU0c7V0couUkB7fnBmIKRUnG8Y1EQ7Qm7MfU0AmM0Stf+ErzoiFeGHA==
   dependencies:
     "@flexiblepersistence/default-initializer" latest
     "@flexiblepersistence/service" latest
